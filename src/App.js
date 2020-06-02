@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import Users from '../src/Users/Users'
-import './App.css';
+import './App.css'
 
 class App extends Component {
 
@@ -26,8 +26,8 @@ class App extends Component {
       })
   }
 
-
   render() {
+
     const { search } = this.state;
     const filteredUsers = this.state.users.filter(user => {
       if (user.username.toLowerCase().indexOf(search.toLowerCase()) !== -1) {
@@ -36,6 +36,8 @@ class App extends Component {
         return user.email
       } else if (user.website.toLowerCase().indexOf(search.toLowerCase()) !== -1) {
         return user.website
+      } else if (!user.website && !user.username && !user.email) {
+        return "HOLA"
       }
     })
 

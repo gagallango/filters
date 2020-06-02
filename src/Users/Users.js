@@ -1,34 +1,27 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Users extends Component {
-
-    constructor(props) {
-        super(props)
-    }
-
-    render() {
-        return (
-            <>
-                <tr>
-                    <th>
-                        {this.props.id}
-                    </th>
-                    <th>
-                        {this.props.username}
-                    </th>
-                    <th>
-                        {this.props.email}
-                    </th>
-                    <th>
-                        {this.props.address}
-                    </th>
-                    <th>
-                        {this.props.website}
-                    </th>
-                </tr>
-            </>
-        )
-    }
+function Users(props) {
+    return (
+        <>
+            <tr>
+                <th>
+                    {props.id}
+                </th>
+                <th>
+                    {props.username}
+                </th>
+                <th>
+                    {props.email}
+                </th>
+                <th>
+                    {props.address}
+                </th>
+                <th>
+                    {props.website}
+                </th>
+            </tr>
+        </>
+    )
 }
 
 export default Users

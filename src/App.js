@@ -36,8 +36,6 @@ class App extends Component {
         return user.email
       } else if (user.website.toLowerCase().indexOf(search.toLowerCase()) !== -1) {
         return user.website
-      } else if (!user.website && !user.username && !user.email) {
-        return "HOLA"
       }
     })
 

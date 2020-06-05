@@ -14,7 +14,11 @@ function Users(props) {
                     {props.email}
                 </th>
                 <th>
-                    {props.address}
+                    {props.address.street},
+                <br></br>
+                    {props.address.zipcode},
+                <br></br>
+                    {props.address.city}
                 </th>
                 <th>
                     {props.website}

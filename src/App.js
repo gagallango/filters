@@ -57,7 +57,7 @@ class App extends Component {
           </thead>
           <tbody className="tbody-r">
             {filteredUsers.map(elm =>
-              <Users id={elm.id} username={elm.username} email={elm.email} address={elm.address.city} website={elm.website} />
+              <Users id={elm.id} username={elm.username} email={elm.email} address={elm.address} website={elm.website} />
             )}
           </tbody>
         </table>

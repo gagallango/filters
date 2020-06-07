@@ -1,3 +1,5 @@
+// Es la primera vez que trabajo con Hooks. Tengo que seguir practicando con eso :(
+
 // import React, { useState, useEffect } from 'react'
 // import Users from '../src/Users/Users'
 // import './App.css'
@@ -32,17 +34,6 @@
 //   }
 
 //   // render() {
-
-//   //   const { search } = this.state;
-//   //   const filteredUsers = this.state.users.filter(user => {
-//   //     if (user.username.toLowerCase().indexOf(search.toLowerCase()) !== -1) {
-//   //       return user.username
-//   //     } else if (user.email.toLowerCase().indexOf(search.toLowerCase()) !== -1) {
-//   //       return user.email
-//   //     } else if (user.website.toLowerCase().indexOf(search.toLowerCase()) !== -1) {
-//   //       return user.website
-//   //     }
-//   //   })
 
 //   return (
 //     <>
